@@ -1,0 +1,111 @@
+@font-face{
+    font-family: 'poppins';
+    src: url(./Poppins/Poppins-Regular.ttf);
+}
+@font-face{
+    font-family: 'open_sans';
+    src: url(./Open_Sans/OpenSans-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'open_sans';
+    padding: 28px 38px;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+}
+@media all and (max-width:375px){
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+header img{
+    width: 18%;
+}
+@media all and (max-width:375px){
+    header img{
+        width: 50%;
+    }
+}
+.whole{
+    max-width: 1440px;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+@media all and (max-width:375px){
+    main{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+main .left{
+    padding-right: 28px;
+}
+@media all and (max-width:375px){
+    main .left{
+        padding-right: 0;
+    }
+    main .left img{
+        width: 100%;
+    }
+}
+main .right{
+    padding-top: 38px;
+}
+main .right h1{
+    color: white;
+    font-family: 'poppins';
+}
+@media all and (max-width:375px){
+    main .right h1{
+        white-space: nowrap;
+        font-size: 25px;
+    }
+}
+main .right p{
+    color: white;
+    opacity: 0.8;
+    margin: 15px 0;
+}
+main .right button{
+    font-family: 'open_sans';
+    color:  hsl(257, 40%, 49%);
+    padding: 15px 60px;
+    border: 0;
+    border-radius: 25px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+@media all and (max-width:375px){
+    main .right button{
+        margin: 10px 0 65px 0;
+        padding: 15px 70px;
+    }
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+}
+@media all and (max-width:375px){
+    footer{
+        justify-content: center;
+    }
+}
+footer i{
+    width: 13px;
+    height: 13px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 8px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
