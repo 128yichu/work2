@@ -12,7 +12,7 @@
 }
 body{
     font-family: 'open_sans';
-    padding: 28px 38px;
+    padding: 6vh 3vw;
     background-color: hsl(257, 40%, 49%);
     background-image: url(./images/bg-desktop.svg);
     background-size: cover;
@@ -20,12 +20,12 @@ body{
 @media all and (max-width:375px){
     body{
         background-image: url(./images/bg-mobile.svg);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
     }
 }
 header img{
-    width: 18%;
+    width: 210px;
 }
 @media all and (max-width:375px){
     header img{
@@ -35,30 +35,42 @@ header img{
 .whole{
     max-width: 1440px;
 }
+.container{
+    width: calc(100% - 6vw);
+}
 main{
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 30px;
+    padding-top: 7vh;
+    width: 100%;
 }
 @media all and (max-width:375px){
     main{
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 }
 main .left{
-    padding-right: 28px;
+    padding-right: 3vw;
+    width: 50%;
 }
 @media all and (max-width:375px){
     main .left{
+        width: 100%;
         padding-right: 0;
     }
-    main .left img{
-        width: 100%;
-    }
+}
+main .left img{
+    width: 100%;
 }
 main .right{
     padding-top: 38px;
+    width: 50%;
+}
+@media all and (max-width:375px){
+    main .right{
+        width: 100%;
+    }
 }
 main .right h1{
     color: white;
@@ -74,6 +86,7 @@ main .right p{
     color: white;
     opacity: 0.8;
     margin: 15px 0;
+    line-height: 23px;
 }
 main .right button{
     font-family: 'open_sans';
@@ -81,7 +94,7 @@ main .right button{
     padding: 15px 60px;
     border: 0;
     border-radius: 25px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 @media all and (max-width:375px){
     main .right button{
