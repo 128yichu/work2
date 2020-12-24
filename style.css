@@ -37,6 +37,7 @@ header img{
 }
 .container{
     width: calc(100% - 6vw);
+    margin: auto;
 }
 main{
     display: flex;
